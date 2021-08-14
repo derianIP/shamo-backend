@@ -23,7 +23,7 @@ class Product extends Model
         'tags'
     ];
 
-    public function galeries()
+    public function galleries()
     {
         return $this->hasMany(ProductGallery::class, 'products_id', 'id');
     }
